@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: FIVETRAN_LEADS
+    database: FIVETRAN
+    schema: FIVETRAN_LEADS  
+    tables:
+      - name: STG_SRC_SF_LEADS
+      - name: STG_SRC_ONE_LEADS
+      - name: STG_SRC_TWO_LEADS
+      - name: STG_SRC_THREE_LEADS
