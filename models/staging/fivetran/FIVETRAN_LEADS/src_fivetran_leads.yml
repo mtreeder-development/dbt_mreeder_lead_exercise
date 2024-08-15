@@ -7,5 +7,16 @@ sources:
     tables:
       - name: STG_SRC_SF_LEADS
       - name: STG_SRC_ONE_LEADS
+        tests: 
+          - unique:
+              column_name: "phone|| '-' || address"
+
       - name: STG_SRC_TWO_LEADS
+        tests: 
+          - unique:
+              column_name: "phone|| '-' || address_1 || '-' || city || '-' ||state || '-' ||zip"
+              
       - name: STG_SRC_THREE_LEADS
+        tests: 
+          - unique:
+              column_name: "phone||'-'||address||'-'||city||'-'||state||'-'||zip"
